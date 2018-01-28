@@ -7,7 +7,7 @@ int main()
     int a=0;
     int b=0;
     int c=0;
-    int d,e,w=0; //sütun numarasi ve satir numarasi
+    int d,e,w=0; //column and rows
     int d1=0;
     int e1=1;
     int f=0;
@@ -23,14 +23,14 @@ int main()
     int sayi_list_2[9]={0};
     int sayi_list_3[9]={0};
     int karakter_sirasi;
-    printf("Girilecek rakam sayisi");
+    printf("The number of inputs");
     scanf("%d",&c);
     while(b<c){
-        printf("sütun numarasi:");
+        printf("column number:");
         scanf("%d",&d);
-        printf("satir numarasi:");
+        printf("row number:");
         scanf("%d",&e);
-        printf("deger:");
+        printf("value:");
         scanf("%d",&w);
         karakter_sirasi=(e-1)*9+d;
         liste[karakter_sirasi]= w;
@@ -119,7 +119,7 @@ int main()
                 for(v=0;v<9;v++){
                     if(!t[v]==0){
                         liste[i] = t[v];
-                        printf("bulundu");
+                        printf("Founded");
                     }
                 }
             }
@@ -167,7 +167,7 @@ int main()
                 printf("%d,%d\n",a+1,sayi_list_2[a]);
             }
             for(a = 0 ; a<9;a++){
-                printf("%d,%d\n",a+1,sayi_list_3[a]);//kare içerisinde taramada sorun var neden kaynaklandigi bilinmiyor
+                printf("%d,%d\n",a+1,sayi_list_3[a]);//There is a problem.I didn't figure yet
             }
          }
     }
